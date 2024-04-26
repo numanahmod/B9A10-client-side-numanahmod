@@ -10,7 +10,7 @@ import {
 import MainLayout from './layouts/MainLayout';
 import Home from './Pages/Home';
 
-import ViewProperties from './Pages/ViewProperties';
+
 
 import Register from './Pages/Register';
 import AuthProvider from './providers/AuthProvider';
@@ -38,11 +38,6 @@ const router = createBrowserRouter([
         index: true,
         element: <Home/>,
         loader: () => fetch('/estate.json')
-      },
-      {
-          path: "/property/:Id",
-          element: <PrivateRoute><ViewProperties></ViewProperties></PrivateRoute>,
-          loader: () => fetch('/estate.json')
       },
       
       {
