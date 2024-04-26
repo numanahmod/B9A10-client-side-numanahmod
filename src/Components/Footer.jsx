@@ -9,7 +9,7 @@ const Footer = () => {
             <footer className="px-4 divide-y bg-gray-800 text-gray-100 dark:text-gray-800">
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 		<div className="lg:w-1/3">
-        <Link to={`/`}> <a className="btn btn-ghost  lg:text-2xl md:text-xl lg:font-bold md:font-bold">  <GiPlanetConquest className="text-green-600" /> <span className=" text-red-800">Enjoy</span> <span className=" text-green-700">Nature </span> </a></Link> 
+        <Link to={`/`}> <a className="btn btn-ghost text-2xl text-center font-bold">  <GiPlanetConquest className="text-green-600" /> <span className=" text-red-800">Enjoy</span> <span className=" text-green-700">Nature </span> </a></Link> 
 		</div>
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-2">
 			
