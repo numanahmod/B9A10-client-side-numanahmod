@@ -6,13 +6,13 @@ import 'animate.css';
 const ViewDetails = () => {
     
 const details = useLoaderData()
-// const {_id} = useParams();
+const {_id} = useParams();
 
-// const id = details.find((i) => i._id == _id  );
+const id = details.find((i) => i._id == _id  );
 
   
 
-// const {image,touristSpotName, countryName, location, description,cost, time, visitors, email, } = id; 
+const {image,touristSpotName, countryName, location, description,cost, time, visitors, email, } = id; 
 
     return (
         <div> 
