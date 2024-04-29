@@ -21,7 +21,7 @@ import List from './Pages/List';
 import Contact from './Pages/Contact';
 import LogIn from './Pages/LogIn';
 import AddTouristsSpot from './Pages/AddTouristsSpot';
-// import AllTouristsSpot from './Pages/AllTouristsSpot';
+import AllTouristsSpot from './Pages/AllTouristsSpot';
 import ViewDetails from './Pages/ViewDetails';
 
 
@@ -66,11 +66,11 @@ const router = createBrowserRouter([
         path:"/contact",
         element: <Contact></Contact>
       },
-      // {
-      //   path:"/allTouristSpot",
-      //   element: <AllTouristsSpot></AllTouristsSpot>,
-      //   loader: () => fetch('http://localhost:5000/addSpot')
-      // },
+      {
+        path:"/allTouristSpot",
+        element: <AllTouristsSpot></AllTouristsSpot>,
+        loader: () => fetch('http://localhost:5000/addSpot')
+      },
       {
         path:"/viewDetails/:_id",
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,

@@ -40,15 +40,16 @@ const AllSpotCards = ({spot}) => {
 		
 	</ul>
 	<div className="space-y-1 text-right">
-		<p> <span>Average cost:  </span>
+		
+		<p ><span className="text-sm text-green-400 font-bold">Best time: </span> <span> {seasonality} </span> </p>
+        <p> <span>Average cost:  </span>
 			<span className="font-semibold"><span className="text-red-500">{cost}</span> </span>
 		</p>
-		<p ><span className="text-sm text-green-400 font-bold">Best time: </span> <span> {seasonality} </span> </p>
 	</div>
 	<div className="flex justify-end space-x-4">
-		<button type="button" className="px-6 py-2 border rounded-md border-violet-400">Back
-			<span className="sr-only sm:not-sr-only">to shop</span>
-		</button>
+		{/* <button type="button" className="px-6 py-2 border rounded-md border-violet-400">
+			<span className="sr-only sm:not-sr-only"></span>
+		</button> */}
 		<Link  to={`/viewDetails/${_id}`}><button type="button" className="px-6 py-2 border rounded-md bg-violet-400 text-gray-900 border-violet-400">
 			<span className="sr-only sm:not-sr-only">View Details</span>
 		</button></Link>
