@@ -35,7 +35,7 @@ const List = () => {
             <div className='grid md:grid-cols-2 gap-8'>
                 {
                   items.map( item => <CardMyList key={item._id} spot ={item}>
-
+                            
                   </CardMyList>)
                 }
                 </div>

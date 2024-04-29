@@ -1,8 +1,19 @@
-# React + Vite
+**The Website Name: **Enjoy Nature**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site URL:** [Enjoy Nature](coming)
 
-Currently, two official plugins are available:
+### Features and Characteristics: To make this website, I have used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* My selected category is "1. Southeast Asia"
+
+* Language: javaScript(92.2%) , css(3.3%) , html(0.5%)
+  
+* tailwindcss.com, daisyUI.com, and mambaiUi.com
+  
+* firebase.google.com
+  
+* I have used here Swiper.js, animate.css, 
+
+* I have deploy this website on firebase
+
+**NPM Package Name for Challenges Tasks:** 
