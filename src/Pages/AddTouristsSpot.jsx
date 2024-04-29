@@ -61,21 +61,7 @@ const AddTouristsSpot = () => {
       <form onSubmit={handleAddSpot} className=''>
           <div className="flex gap-10 ">
             <div className="flex-1">
-            <label
-                className="block mt-4 mb-2 dark:text-white"
-               
-              >
-                User name 
-              </label>
-              <input
-              required
-                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
-                
-                type="text"
-                placeholder="User name"
-                id="name"
-                name="username"
-              />
+            
             
               <label className="block mb-2 dark:text-white">
                 Image Url 
@@ -141,6 +127,22 @@ const AddTouristsSpot = () => {
                 name="description"
               />
 
+<label
+                className="block mt-4 mb-2 dark:text-white"
+                htmlFor="price"
+              >
+              Average cost
+              </label>
+              <input
+              required
+                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                type="text"
+                placeholder="Average_cost"
+                id="cost"
+                name="cost"
+              />
+              
+
              
             </div>
             {/* Right side */}
@@ -184,7 +186,21 @@ const AddTouristsSpot = () => {
                 name="visitors"
               />
 
-              
+<label
+                className="block mt-4 mb-2 dark:text-white"
+               
+              >
+                User name 
+              </label>
+              <input
+              required
+                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                
+                type="text"
+                placeholder="User name"
+                id="name"
+                name="username"
+              />
               <label
                 className="block mt-4 mb-2 dark:text-white"
                
@@ -199,20 +215,6 @@ const AddTouristsSpot = () => {
                 placeholder="User Email"
                 id="email"
                 name="email"
-              />
-               <label
-                className="block mt-4 mb-2 dark:text-white"
-                htmlFor="price"
-              >
-              Average cost
-              </label>
-              <input
-              required
-                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
-                type="text"
-                placeholder="Average_cost"
-                id="cost"
-                name="cost"
               />
               
             </div>

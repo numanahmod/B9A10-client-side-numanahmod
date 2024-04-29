@@ -119,7 +119,7 @@ Martin’s Island </h1>
              
                 <div className='grid md:grid-cols-2 gap-8'>
                 {
-                  Spots.map( spot => <TouristsSpotCard key={spot._it} spot ={spot}>
+                  Spots.map( spot => <TouristsSpotCard key={spot._id} spot ={spot}>
 
                   </TouristsSpotCard>)
                 }
