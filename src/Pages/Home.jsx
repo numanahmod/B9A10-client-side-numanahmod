@@ -25,11 +25,12 @@ import CustomersReview from '../Components/CustomersReview/CustomersReview';
 import { LuPlane } from 'react-icons/lu';
 import { GiPriceTag } from 'react-icons/gi';
 import { MdOutlineContactSupport } from 'react-icons/md';
+import TouristsSpotCard from '../Components/TouristsSpotCard';
 
 const Home = () => {
 
-    const books = useLoaderData();
-    console.log(books);
+    const Spots  = useLoaderData();
+
 
 
     //swiper slider
@@ -111,7 +112,19 @@ Martin’s Island </h1>
 
 
             {/*Tourists Spots */}
-            <h1 className='text-center text-3xl font-bold mb-8 animate__animated animate__swing'> Tourists Spots  </h1>
+            <div className='m-16'>
+
+            <h1 className='text-center text-3xl font-bold mb-8 animate__animated animate__swing'> Tourists Spots  </h1> 
+
+             
+                <div className='grid md:grid-cols-2 gap-8'>
+                {
+                  Spots.map( spot => <TouristsSpotCard key={spot._it} spot ={spot}>
+
+                  </TouristsSpotCard>)
+                }
+                </div>
+            </div>
 
             <h1 className='text-center text-3xl font-bold mb-8 animate__animated animate__swing'> Why Choose Us  </h1>
             <p></p>
@@ -139,6 +152,7 @@ Martin’s Island </h1>
 
 
             <h1 className='text-center text-3xl font-bold mb-8 animate__animated animate__swing mt-12 '> From our Happy Customers   </h1>
+            <p className=' text-center font-bold text-gray-400'> Here is added few comments of our honorable recent customers </p>
 
             <div className=''>
               <CustomersReview></CustomersReview>

@@ -64,7 +64,12 @@ const Navbar = () => {
    <div className="flex gap-4">
   
    
-   
+   <input type="checkbox" className="toggle" checked />
+   {user && <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
+        <div className="w-10 rounded-full" >  
+            <img className=""  alt="Please, reload" src={user?.photoURL} />
+        </div>
+      </div> }
    <div>
    {
     user ? 
@@ -74,11 +79,7 @@ const Navbar = () => {
    }
    <ToastContainer /> 
    </div>
-   {user && <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
-        <div className="w-10 rounded-full" >  
-            <img className=""  alt="Please, reload" src={user?.photoURL} />
-        </div>
-      </div> }
+   
     
    </div>
   </div>

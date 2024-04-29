@@ -76,7 +76,7 @@ const Register = () => {
             {/* <Helmet>
             <title> Your Dream Home | Register </title>
            </Helmet> */}
-			<div className="w-full max-w-md p-8 space-y-3 rounded-xl border-2 mt-12 bg-white ">
+			<div className="w-full max-w-md p-8 space-y-3 rounded-xl border-2 mt-12  bg-pink-200 ">
 	<h1 className="text-2xl font-bold text-center ">Please, register </h1>
 	<form onSubmit={handleRegister} noValidate="" action="" className="space-y-4">
 		<div className="space-y-1 text-sm">
