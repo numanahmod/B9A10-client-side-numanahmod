@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import '../Components/Navbar.css'
+import Swal from "sweetalert2";
 
 
 const Update = () => {
@@ -46,6 +47,12 @@ const Update = () => {
         .then(data =>{
             
             console.log(data);
+            Swal.fire({
+                title: 'Success!',
+                text: 'Updated successfully',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+              })
         })
         
 
