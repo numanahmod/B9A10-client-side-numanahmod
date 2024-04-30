@@ -14,7 +14,7 @@ const List = () => {
     console.log(items);
     console.log(user);
     useEffect(() =>{
-        fetch(`http://localhost:5000/myList/${user?.email}`)
+        fetch(`https://b9a10-server-side-numanahmod.vercel.app/myList/${user?.email}`)
         .then((res) => res.json())
         .then(data =>{
            
@@ -34,7 +34,7 @@ const List = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/delete/${id}`, {
+                fetch(`https://b9a10-server-side-numanahmod.vercel.app/delete/${id}`, {
                     method: 'DELETE'
                 })
                 .then((res) => res.json())

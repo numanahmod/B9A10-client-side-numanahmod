@@ -43,7 +43,7 @@ const LogIn = () => {
  // navigate after login 
  navigate(location?.state? location.state: '/');
 	const userC = {email};
-	fetch('http://localhost:5000/user',{
+	fetch('https://b9a10-server-side-numanahmod.vercel.app/user',{
 		method: 'POST',
 		headers: {
 			'content-type' : 'application/json'

@@ -39,12 +39,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home/>,
-        loader: () => fetch('http://localhost:5000/addSpot')
+        loader: () => fetch('https://b9a10-server-side-numanahmod.vercel.app/addSpot')
       },
       
       {
         path: "/addTouristsSpot",
-        loader: () => fetch('/estate.json'),
         element: <PrivateRoute><AddTouristsSpot></AddTouristsSpot></PrivateRoute>,
         
       },
@@ -70,12 +69,12 @@ const router = createBrowserRouter([
       {
         path:"/allTouristSpot",
         element: <AllTouristsSpot></AllTouristsSpot>,
-        loader: () => fetch('http://localhost:5000/addSpot')
+        loader: () => fetch('https://b9a10-server-side-numanahmod.vercel.app/addSpot')
       },
       {
         path:"/viewDetails/:_id",
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-        loader: () => fetch(`http://localhost:5000/addSpot`)
+        loader: () => fetch(`https://b9a10-server-side-numanahmod.vercel.app/addSpot`)
       },
       {
         path: "/update/:id",

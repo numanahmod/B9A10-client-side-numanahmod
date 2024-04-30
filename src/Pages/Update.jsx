@@ -11,7 +11,7 @@ const Update = () => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singleProduct/${id}`)
+        fetch(`https://b9a10-server-side-numanahmod.vercel.app/singleProduct/${id}`)
         .then(res=> res.json())
         .then(data =>{
             setProduct(data)
@@ -37,7 +37,7 @@ const Update = () => {
         const newUpdate = {image,touristSpotName, countryName, location, description,cost, seasonality, time, visitors,  }
         console.log(newUpdate); 
 
-        fetch(`http://localhost:5000/updateSpot/${id}`, {
+        fetch(`https://b9a10-server-side-numanahmod.vercel.app/updateSpot/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type' : 'application/json'

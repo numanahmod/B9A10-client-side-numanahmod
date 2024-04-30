@@ -1,8 +1,8 @@
 **The Website Name: **Enjoy Nature**
 
-**Live Site URL:** [Enjoy Nature](coming)
+**Live Site URL:** [Enjoy Nature](https://b9a10-client-side-numanahmod.web.app)
 
-### Features and Characteristics: To make this website, I have used:
+### Features and Characteristics: To make this website, I have used here:
 
 * My selected category is "1. Southeast Asia"
 
@@ -14,7 +14,5 @@
   
 * I have used here Swiper.js, animate.css, 
 
-* I have deploy this website on firebase
-
-**NPM Package Name for Challenges Tasks:** for challenge 2 installed: `npm install react-awesome-reveal @emotion/react --save`
+**NPM Package Name for Challenges Tasks:** for challenge 4 installed: `npm install react-awesome-reveal @emotion/react --save`
 `npm install react-tooltip`
