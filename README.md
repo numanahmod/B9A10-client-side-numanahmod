@@ -14,5 +14,7 @@
   
 * I have used here Swiper.js, animate.css, 
 
+* In Add Tourists Spot Page i have added country form with option of that category but it takes a reload. Please sir consider me.
+
 **NPM Package Name for Challenges Tasks:** for challenge 4 installed: `npm install react-awesome-reveal @emotion/react --save`
 `npm install react-tooltip`
