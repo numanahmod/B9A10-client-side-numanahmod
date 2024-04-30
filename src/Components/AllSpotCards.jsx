@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 
 
@@ -7,6 +8,8 @@ const AllSpotCards = ({spot}) => {
     const {image,touristSpotName, countryName, cost, seasonality, time, visitors, _id} = spot;
     return (
         <div>
+			<Fade>
+
 
      <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 bg-gray-900 text-gray-100">
 
@@ -57,7 +60,7 @@ const AllSpotCards = ({spot}) => {
   
 	</div>
 </div>
-            
+</Fade>
         </div>
     );
 };

@@ -2,6 +2,7 @@ import {   useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { Fade } from "react-awesome-reveal";
 // import { AuthContext } from "../providers/AuthProvider";
 // import CardMyList from "../Components/CardMyList";
 
@@ -56,7 +57,9 @@ const List = () => {
     }
     return (
         <div className=" bg-white">
-            
+            <Fade>
+  
+
 
            <p className=" text-3xl font-bold  text-center mt-4 ">My added List </p>
 
@@ -100,7 +103,7 @@ const List = () => {
            
 
       
-           
+            </Fade>
         </div>
     );
 };

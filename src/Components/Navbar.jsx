@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Tooltip } from "react-tooltip";
 
 const Navbar = () => {
 
@@ -66,9 +67,13 @@ const Navbar = () => {
   
    
    
-   {user && <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
+   {user && <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar " >
         <div className="w-10 rounded-full" >  
-            <img className=""  alt="Please, reload" src={user?.photoURL} />
+            
+            <a className="my-anchor-element"><img className=""  alt="Please, reload" src={user?.photoURL} /></a>
+            <Tooltip anchorSelect=".my-anchor-element" place="top">
+            {user.displayName}
+</Tooltip>
         </div>
       </div> }
    <div>

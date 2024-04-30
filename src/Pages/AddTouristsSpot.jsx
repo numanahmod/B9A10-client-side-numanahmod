@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2'
 
 import '../Components/Navbar.css'
+import { Fade } from 'react-awesome-reveal';
 
 
 
@@ -56,6 +57,9 @@ const AddTouristsSpot = () => {
     
     return (
        <>
+       <Fade>
+ 
+
       <div className='lg:m-20 m-2 md:m-5 border-2 bg-pink-100 lg:p-8 p-2'>
       <h2 className='text-center text-xl font-bold'>Add Tourists Spot </h2>
       <form onSubmit={handleAddSpot} className=''>
@@ -228,6 +232,7 @@ const AddTouristsSpot = () => {
           />
         </form>
       </div>
+      </Fade>
        </>
     );
 };

@@ -26,6 +26,7 @@ import { LuPlane } from 'react-icons/lu';
 import { GiPriceTag } from 'react-icons/gi';
 import { MdOutlineContactSupport } from 'react-icons/md';
 import TouristsSpotCard from '../Components/TouristsSpotCard';
+import { Fade } from 'react-awesome-reveal';
 
 const Home = () => {
 
@@ -43,9 +44,9 @@ const Home = () => {
 
     return (
         <div>
-           {/* <Helmet>
-            <title>Your Dream Home | Home </title>
-           </Helmet> */}
+          <Fade>
+  
+
             {/* banner */}
            
 
@@ -158,7 +159,7 @@ Martin’s Island </h1>
               <CustomersReview></CustomersReview>
             </div>
 
-           
+            </Fade>
         </div>
     );
 };

@@ -16,4 +16,5 @@
 
 * I have deploy this website on firebase
 
-**NPM Package Name for Challenges Tasks:** 
+**NPM Package Name for Challenges Tasks:** for challenge 2 installed: `npm install react-awesome-reveal @emotion/react --save`
+`npm install react-tooltip`
