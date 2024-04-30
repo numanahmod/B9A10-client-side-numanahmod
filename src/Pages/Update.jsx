@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import '../Components/Navbar.css'
 import Swal from "sweetalert2";
+import { Fade } from "react-awesome-reveal";
 
 
 const Update = () => {
@@ -60,6 +61,9 @@ const Update = () => {
 
     return (
         <div className='lg:m-20 m-2 md:m-5 border-2 bg-pink-100 lg:p-8 p-2'>
+            <Fade>
+  
+
         <h2 className='text-center text-xl font-bold'> Update your added Tourists Spot </h2>
         <form  onSubmit={handleUpdate} className=''>
             <div className="lg:flex md:flex lg:gap-10 md:gap-5 ">
@@ -213,6 +217,7 @@ const Update = () => {
               
             />
           </form>
+          </Fade>
         </div>
     );
 };
