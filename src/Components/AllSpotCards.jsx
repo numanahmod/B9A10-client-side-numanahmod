@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AllSpotCards = ({spot}) => {
     
 
-    const {image,touristSpotName, countryName, location, description,cost, seasonality, time, visitors, email, username, _id} = spot;
+    const {image,touristSpotName, countryName, cost, seasonality, time, visitors, _id} = spot;
     return (
         <div>
 

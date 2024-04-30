@@ -23,6 +23,7 @@ import LogIn from './Pages/LogIn';
 import AddTouristsSpot from './Pages/AddTouristsSpot';
 import AllTouristsSpot from './Pages/AllTouristsSpot';
 import ViewDetails from './Pages/ViewDetails';
+import Update from './Pages/Update';
 
 
 
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
         path:"/viewDetails/:_id",
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
         loader: () => fetch(`http://localhost:5000/addSpot`)
+      },
+      {
+        path: "/update/:_id",
+        element: <Update></Update>
       }
       
      

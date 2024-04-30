@@ -18,12 +18,12 @@ const AuthProvider = ({children}) => {
    }
 
   
-   const updateUserProfile = (fullName, image) => {
-   return updateProfile(auth.currentUser, {
-        displayName: fullName,
-        photoURL: image
-      })
-   }
+//    const updateUserProfile = (fullName, image) => {
+//    return updateProfile(auth.currentUser, {
+//         displayName: fullName,
+//         photoURL: image
+//       })
+//    }
 
    const login = (email, password) => {
     setLoading(true);
@@ -52,7 +52,7 @@ const AuthProvider = ({children}) => {
         createUser,
         login,
         logOut,
-        updateUserProfile,
+        // updateUserProfile,
         setUser 
     }
     return (
