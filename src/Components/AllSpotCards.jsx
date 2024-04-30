@@ -51,7 +51,7 @@ const AllSpotCards = ({spot}) => {
 			<span className="sr-only sm:not-sr-only"></span>
 		</button> */}
 		<Link  to={`/viewDetails/${_id}`}><button type="button" className="px-6 py-2 border rounded-md bg-violet-400 text-gray-900 border-violet-400">
-			<span className="sr-only sm:not-sr-only">View Details</span>
+			<span className="">View Details</span>
 		</button></Link>
 
   

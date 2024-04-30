@@ -20,7 +20,7 @@ const CustomersReview = () => {
     return (
         <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={30}
         
         pagination={{

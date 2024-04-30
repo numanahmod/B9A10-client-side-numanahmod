@@ -37,6 +37,7 @@ const Navbar = () => {
        { !user && 
         <NavLink to='/register' className={({isActive})=> isActive? 'btn font-bold btn2':'font-bold btn'}>  Register </NavLink>
         }
+        <input type="checkbox" className="toggle" checked />
    </>
     return (
         <div>
@@ -50,7 +51,7 @@ const Navbar = () => {
       {navLinks}
       </ul>
     </div>
-    <Link to={`/`}> <a className="btn btn-ghost  lg:text-xl md:text-xl lg:font-bold md:font-bold">  <GiPlanetConquest className="text-green-600" /> <span className=" text-red-800">Enjoy</span> <span className=" text-green-700">Nature </span> </a></Link> 
+    <Link to={`/`}> <a className="btn btn-ghost  lg:text-xl md:text-xl lg:font-bold md:font-bold">  <GiPlanetConquest className="text-green-600 -ml-5" /> <span className=" text-red-800">Enjoy</span> <span className=" text-green-700">Nature </span> </a></Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-3">
@@ -64,7 +65,7 @@ const Navbar = () => {
    <div className="flex gap-4">
   
    
-   <input type="checkbox" className="toggle" checked />
+   
    {user && <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
         <div className="w-10 rounded-full" >  
             <img className=""  alt="Please, reload" src={user?.photoURL} />

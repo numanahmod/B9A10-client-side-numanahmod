@@ -3,7 +3,7 @@
 const CardMyList = () => {
     return (
         <div>
-            <h2>Hii</h2>
+            <h2>Hihi</h2>
         </div>
     );
 };

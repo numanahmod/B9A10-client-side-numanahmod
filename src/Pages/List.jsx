@@ -1,12 +1,12 @@
-import {  useContext, useEffect, useState } from "react";
-// import useAuth from "../hooks/useAuth";
-import { AuthContext } from "../providers/AuthProvider";
+import {   useEffect, useState } from "react";
+import useAuth from "../hooks/useAuth";
+// import { AuthContext } from "../providers/AuthProvider";
 import CardMyList from "../Components/CardMyList";
 
 const List = () => {
-    // const {user } = useAuth() || {};
-    const {user   } = useContext(AuthContext);
-    const [items, setItems ] = useState([]);
+    const {user } = useAuth() || {};
+    // const {user   } = useContext(AuthContext);
+    const [items, setItems] = useState([]);
     console.log(user);
     useEffect(() =>{
         fetch(`http://localhost:5000/addSpot/${user?.email}`)

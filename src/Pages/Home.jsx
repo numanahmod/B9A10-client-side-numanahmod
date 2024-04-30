@@ -128,7 +128,7 @@ Martin’s Island </h1>
 
             <h1 className='text-center text-3xl font-bold mb-8 animate__animated animate__swing'> Why Choose Us  </h1>
             <p></p>
-            <div className='lg:flex lg:grid-cols-3 justify-center text-center items-center'>
+            <div className='lg:flex lg:grid-cols-3 md:flex md:grid-cols-3 justify-center text-center items-center'>
               <div className=' border-2 w-80 h-60 bg-slate-200 m-6 p-3 shadow-2xl hover:bg-slate-100'>
               <LuPlane className=' text-5xl ml-28 mt-12 mb-5 text-green-600' />
                   <h1 className='font-bold text-xl'>500+ Destinations</h1>

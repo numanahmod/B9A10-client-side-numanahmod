@@ -56,10 +56,10 @@ const AddTouristsSpot = () => {
     
     return (
        <>
-      <div className='m-20 border-2 bg-pink-100 p-8'>
+      <div className='lg:m-20 m-2 md:m-5 border-2 bg-pink-100 lg:p-8 p-2'>
       <h2 className='text-center text-xl font-bold'>Add Tourists Spot </h2>
       <form onSubmit={handleAddSpot} className=''>
-          <div className="flex gap-10 ">
+          <div className="lg:flex md:flex lg:gap-10 md:gap-5 ">
             <div className="flex-1">
             
             
@@ -148,7 +148,7 @@ const AddTouristsSpot = () => {
             {/* Right side */}
             <div className="flex-1">
             <label
-                className="block  mt-4 mb-2 dark:text-white"
+                className="block  mb-2 dark:text-white"
                
               >
                Seasonality
@@ -163,7 +163,7 @@ const AddTouristsSpot = () => {
                 name="seasonality"
               />
 
-              <label className="block  mb-2 dark:text-white">
+              <label className="block mt-4  mb-2 dark:text-white">
               Travel time
               </label>
               <input
