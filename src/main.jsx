@@ -78,7 +78,7 @@ const router = createBrowserRouter([
         loader: () => fetch(`http://localhost:5000/addSpot`)
       },
       {
-        path: "/update/:_id",
+        path: "/update/:id",
         element: <Update></Update>
       }
       

@@ -33,10 +33,10 @@ const List = () => {
                            
                             
 
-     <table className="ml-12">
+     <table className="lg:ml-12 md:ml-4">
         <thead>
-          <tr className="lg:flex col-span-6 justify-start lg:gap-28">
-            <th>User name</th>
+          <tr className="lg:flex col-span-6 justify-start lg:gap-28 md:pr-10">
+            <th> Country </th>
             <th>Average Cost</th>
             <th className=" -ml-8"> Visitors</th>
             <th className=" -ml-4"> Duration </th>
@@ -46,8 +46,8 @@ const List = () => {
           </tr>
         </thead>
         <tbody>
-          <tr className="lg:flex col-span-6 justify-start  lg:gap-28">
-            <td>{item.username} </td>
+          <tr className="lg:flex col-span-6 justify-start  lg:gap-28 md:pr-10">
+            <td>{item.countryName} </td>
             <td> {item.cost} </td>
             <td>  {item.visitors} </td>
             <td>  {item.time} </td>
