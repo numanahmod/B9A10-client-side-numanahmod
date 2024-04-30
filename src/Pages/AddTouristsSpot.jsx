@@ -96,14 +96,33 @@ const AddTouristsSpot = () => {
                
               >       Country name
               </label>
-              <input
-              required
+             
+              <select
+                name="countryName"
+                id="country"
                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
                 type="text"
-                placeholder=" Country name "
-                id="name"
-                name="countryName"
-              />
+                placeholder="Select country"
+              >
+                <option value="Bangladesh" selected>
+                  Bangladesh 
+                </option>
+                <option value="Thailand" selected>
+                Thailand
+                </option>
+                <option value="Indonesia" selected>
+                Indonesia
+                </option>
+                <option value="Malaysia" selected>
+                Malaysia
+                </option>
+                <option value="Vietnam" selected>
+                Vietnam
+                </option>
+                <option value="Cambodia" selected>
+                Cambodia
+                </option>
+              </select>
               <label
                 className="block mt-4 mb-2 dark:text-white"
                
