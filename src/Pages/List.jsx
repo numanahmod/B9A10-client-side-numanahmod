@@ -8,16 +8,31 @@ const List = () => {
     const {user } = useAuth() || {};
     // const {user   } = useContext(AuthContext);
     const [items, setItems] = useState([]);
+    const [control, setControl] = useState(false);
     console.log(items);
     console.log(user);
     useEffect(() =>{
         fetch(`http://localhost:5000/myList/${user?.email}`)
         .then((res) => res.json())
         .then(data =>{
-            console.log(data);
+           
             setItems(data);
         })
-    },[user])
+
+    },[user, control])
+
+    const handleDelete = (id) =>{
+        fetch(`http://localhost:5000/delete/${id}`, {
+            method: 'DELETE'
+        })
+        .then((res) => res.json())
+        .then(data =>{
+           if (data.deletedCount > 0) {
+            setControl(!control)
+            
+           }
+        })
+    }
     return (
         <div className=" bg-white">
             
@@ -52,7 +67,7 @@ const List = () => {
             <td>  {item.visitors} </td>
             <td>  {item.time} </td>
             <td className="ml-2"><Link to={`/update/${item._id}`}> <button className="btn btn-primary gap-5 mr-8"> Update </button></Link></td>
-            <td className=" -ml-28"><button className="btn btn-primary"> Delete </button></td>
+            <td className=" -ml-28"><button onClick={()=>handleDelete(item._id)} className="btn btn-primary"> Delete </button></td>
           </tr>
          
         </tbody>
