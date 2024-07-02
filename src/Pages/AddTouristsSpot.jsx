@@ -2,12 +2,15 @@ import Swal from 'sweetalert2'
 
 import '../Components/Navbar.css'
 import { Fade } from 'react-awesome-reveal';
+import { useContext } from 'react';
+import { AuthContext } from '../providers/AuthProvider';
 
 
 
 
 
 const AddTouristsSpot = () => {
+  const {user } = useContext(AuthContext);
     const handleAddSpot = e =>{
         e.preventDefault();
         const form = e.target;
@@ -235,9 +238,10 @@ const AddTouristsSpot = () => {
                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
                 
                 type="email"
-                placeholder="User Email"
+               disabled
                 id="email"
                 name="email"
+                defaultValue={user.email}
               />
               
             </div>

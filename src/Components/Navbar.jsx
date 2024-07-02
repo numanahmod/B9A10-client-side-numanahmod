@@ -38,7 +38,7 @@ const Navbar = () => {
        { !user && 
         <NavLink to='/register' className={({isActive})=> isActive? 'btn font-bold btn2':'font-bold btn'}>  Register </NavLink>
         }
-        <input type="checkbox" className="toggle" checked />
+        
    </>
     return (
         <div>

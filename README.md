@@ -2,6 +2,11 @@
 
 **Live Site URL:** [Enjoy Nature](https://b9a10-client-side-numanahmod.web.app)
 
+### Projects Overview:
+* I have made this website for Tourist: Any tourist can find out the place of Southeast Asia.
+* Any Spot Manager also can add there tourist spots here. 
+* In my List page, Manager can delete the tourist spot which he/she added and can update also. 
+
 ### Features and Characteristics: To make this website, I have used here:
 
 * My selected category is "1. Southeast Asia"
@@ -14,7 +19,6 @@
   
 * I have used here Swiper.js, animate.css, 
 
-* In Add Tourists Spot Page i have added country form with option of that category but it takes a reload. Please sir consider me.
 
 **NPM Package Name for Challenges Tasks:** for challenge 4 installed: `npm install react-awesome-reveal @emotion/react --save`
 `npm install react-tooltip`
