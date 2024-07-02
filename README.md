@@ -22,3 +22,5 @@
 
 **NPM Package Name for Challenges Tasks:** for challenge 4 installed: `npm install react-awesome-reveal @emotion/react --save`
 `npm install react-tooltip`
+
+**What anybody should do to run locally after clone** `nmp install in client site and server side clone and run locally 5000 port `
