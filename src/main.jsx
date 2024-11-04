@@ -24,6 +24,7 @@ import AddTouristsSpot from './Pages/AddTouristsSpot';
 import AllTouristsSpot from './Pages/AllTouristsSpot';
 import ViewDetails from './Pages/ViewDetails';
 import Update from './Pages/Update';
+import Tag from './Pages/Tag';
 
 
 
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/myList",
         element: <PrivateRoute> <List></List> </PrivateRoute>
+      },
+      {
+        path: "/tag",
+        element: <PrivateRoute> <Tag></Tag> </PrivateRoute>
       },
       
       {

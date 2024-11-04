@@ -9,7 +9,7 @@ const Footer = () => {
             <footer className="px-4 divide-y bg-gray-800 text-gray-100 dark:text-gray-800">
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 		<div className="lg:w-1/3">
-        <Link to={`/`}> <a className="btn btn-ghost text-2xl text-center font-bold">  <GiPlanetConquest className="text-green-600" /> <span className=" text-red-800">Enjoy</span> <span className=" text-green-700">Nature </span> </a></Link> 
+        <Link to={`/`}> <a className="btn btn-ghost text-2xl text-center font-bold">  <GiPlanetConquest className="text-green-600" /> <span className=" text-red-800">Learn English with</span> <span className=" text-green-700">Numan </span> </a></Link> 
 		</div>
 		<div className="grid lg:grid-cols-2 md:grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 ">
 			
@@ -21,7 +21,7 @@ const Footer = () => {
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
 						<path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
 					</svg>
-					<span>Dhaka, Bangladesh </span>
+					<span>Habiganj, Sylhet, Bangladesh </span>
 				</p>
 				<p className="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -34,7 +34,7 @@ const Footer = () => {
 						<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
 						<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
 					</svg>
-					<span>enjoynature2024@business.com</span>
+					<span>numanahmod96@gmail.com</span>
 				</p>
 			</div>
 

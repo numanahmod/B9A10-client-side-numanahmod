@@ -29,11 +29,13 @@ const Navbar = () => {
    const navLinks =  <>
         <NavLink to='/' className={({isActive})=> isActive? 'btn font-bold btn2':'font-bold btn'}> Home </NavLink>
 
-        <NavLink to='/allTouristSpot' className={({isActive})=> isActive? 'btn  font-bold btn2':'font-bold btn'}> All Tourists Spot    </NavLink>
-
-        <NavLink to='/addTouristsSpot' className={({isActive})=> isActive? 'btn font-bold btn2':'font-bold btn'}> Add Tourists Spot  </NavLink>
-        
-        <NavLink to='/myList'className={({isActive})=> isActive? 'btn  font-bold btn2':'font-bold btn'}> My List   </NavLink>
+        <NavLink to='/allTouristSpot' className={({isActive})=> isActive? 'btn  font-bold btn2':'font-bold btn'}>Basic Grammar</NavLink>
+             {/* All Tourists Spot  */}
+        <NavLink to='/addTouristsSpot' className={({isActive})=> isActive? 'btn font-bold btn2':'font-bold btn'}> SSC  </NavLink>
+        {/* Add Tourists Spot */}
+        <NavLink to='/myList'className={({isActive})=> isActive? 'btn  font-bold btn2':'font-bold btn'}>  Spoken  </NavLink>
+            {/* My List */}
+        <NavLink to='/tag'className={({isActive})=> isActive? 'btn  font-bold btn2':'font-bold btn'}> Test </NavLink>
 
        { !user && 
         <NavLink to='/register' className={({isActive})=> isActive? 'btn font-bold btn2':'font-bold btn'}>  Register </NavLink>
@@ -52,7 +54,7 @@ const Navbar = () => {
       {navLinks}
       </ul>
     </div>
-    <Link to={`/`}> <a className="btn btn-ghost  lg:text-xl md:text-xl lg:font-bold md:font-bold">  <GiPlanetConquest className="text-green-600 -ml-5" /> <span className=" text-red-800">Enjoy</span> <span className=" text-green-700">Nature </span> </a></Link> 
+    <Link to={`/`}> <a className="btn btn-ghost  lg:text-xl md:text-xl lg:font-bold md:font-bold">  <GiPlanetConquest className="text-green-600 -ml-5" /> <span className=" text-red-800">Learn English with</span> <span className=" text-green-700">Numan</span> </a></Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 gap-3">
